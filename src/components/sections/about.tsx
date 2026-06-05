@@ -17,7 +17,7 @@ export function About() {
 
         <div className="grid gap-12 lg:grid-cols-2">
           <FadeUp>
-            <p className="text-base leading-relaxed text-primary/70 md:text-lg dark:text-white/70">
+            <p className="text-base leading-relaxed text-primary md:text-lg dark:text-white">
               <span className="font-semibold text-primary dark:text-white">
                 Gitansh Manaktala
               </span>{" "}
@@ -25,7 +25,7 @@ export function About() {
               engagement, institutional outreach, strategic partnerships,
               international collaborations and conference management.
             </p>
-            <p className="mt-6 text-base leading-relaxed text-primary/70 md:text-lg dark:text-white/70">
+            <p className="mt-6 text-base leading-relaxed text-primary md:text-lg dark:text-white">
               With a proven track record of connecting academic institutions
               with global stakeholders, Gitansh brings executive-level
               professionalism to every engagement — from intimate roundtables
@@ -43,7 +43,7 @@ export function About() {
                 {ABOUT_STAKEHOLDERS.organizations.map((item) => (
                   <li
                     key={item}
-                    className="flex items-center gap-2.5 text-sm text-primary/70 dark:text-white/70"
+                    className="flex items-center gap-2.5 text-sm text-primary dark:text-white"
                   >
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-accent" />
                     {item}

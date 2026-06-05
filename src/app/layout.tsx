@@ -70,19 +70,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth dark">
       <head>
         <StructuredData />
       </head>
       <body
         className={`${inter.variable} ${poppins.variable} min-h-screen bg-background font-sans text-primary antialiased dark:bg-background dark:text-foreground`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
+       <ThemeProvider
+  attribute="class"
+  defaultTheme="dark"
+  enableSystem={false}
+  disableTransitionOnChange
+>
           {children}
         </ThemeProvider>
       </body>
