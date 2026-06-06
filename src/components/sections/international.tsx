@@ -89,6 +89,26 @@ export function International() {
                   />
                 ))}
 
+{hub &&
+  others.map((region, i) => (
+    <motion.circle
+      key={`pulse-${region.name}`}
+      r="0.6"
+      fill="#60A5FA"
+      animate={{
+        cx: [hub.x, region.x],
+        cy: [hub.y, region.y],
+        opacity: [0, 1, 1, 0],
+      }}
+      transition={{
+        duration: 2,
+        delay: i * 0.5,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+    />
+  ))
+}
               {/* Region dots */}
               {INTERNATIONAL_REGIONS.map((region, i) => (
                 <g key={region.name}>
