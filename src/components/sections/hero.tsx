@@ -123,10 +123,10 @@ export function Hero() {
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/30 to-secondary/30 blur-2xl" />
             <div className="relative h-full w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
               <Image
-                src="/images/headshot-placeholder.svg"
-                alt="Gitansh Manaktala - Professional Headshot"
+                src="/images/gitansh-hero.png"
+                alt="Gitansh Manaktala"
                 fill
-                className="object-cover"
+                 className="object-cover"
                 priority
                 sizes="(max-width: 768px) 288px, 384px"
               />
