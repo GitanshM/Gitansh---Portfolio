@@ -105,7 +105,7 @@ export function Hero() {
               size="lg"
               asChild
             >
-              <a href="/resume.pdf" download>
+             <a href="/Gitansh-Manaktala-Resume.pdf" download>
                 <Download className="h-4 w-4" />
                 Download Resume
               </a>
